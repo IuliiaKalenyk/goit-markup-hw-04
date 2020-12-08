@@ -33,6 +33,7 @@ body {
   color: var(--primery-text-color);
   background-color: var(--primery-background-color);
   font-family: 'Roboto', sans-serif;
+  width: 1600px;
 }
 .list {
   list-style: none;
@@ -108,19 +109,7 @@ img {
 .menu-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-/*.header .address {
-}*/
-/*.addres-contacts:first-child {
-  margin-right: 50px;
-}*/
 
-/*
-.header .address {
-  margin-left: auto;
-}
-
-
-*/
 .logotype {
   color: var(--logo-color-heder);
   font-family: 'Raleway', sans-serif;
@@ -164,40 +153,6 @@ img {
   color: var(--accent-color);
 }
 
-/*.button {
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: var(--primery-background-color);
-  margin-right: 10px;
-  margin-left: 305px;
-  display: flex;
-}*/
-.button-icon-mailto:hover,
-.button-icon-mailto:focus,
-.button-icon-mailto:active {
-  fill: var(--accent-color);
-}
-.button-icon-tel:hover,
-.button-icon-tel:focus,
-.button-icon-tel:active {
-  fill: var(--accent-color);
-}
-/*.button:focus,
-.button:active {
-  color: var(--accent-color);
-}*/
-.button-icon-mailto {
-  display: flex;
-  margin-right: 10px;
-  margin-left: 305px;
-  fill: var(--secondary-text-color);
-}
-.button-icon-tel {
-  display: flex;
-  margin-right: 10px;
-  fill: var(--secondary-text-color);
-}
 .header-mail,
 .header-tel {
   font-family: 'Roboto', sans-serif;
@@ -206,6 +161,7 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
   display: flex;
   align-items: center;
 }
@@ -219,11 +175,39 @@ img {
 .header-tel:active {
   color: var(--accent-color);
 }
+.button-icon-mailto {
+  display: flex;
+  margin-right: 10px;
+  margin-left: 305px;
+  fill: var(--secondary-text-color);
+}
+.button-icon-tel {
+  display: flex;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+.button-icon-mailto:hover,
+.button-icon-mailto:focus,
+.button-icon-mailto:active {
+  fill: var(--accent-color);
+}
+.button-icon-tel:hover,
+.button-icon-tel:focus,
+.button-icon-tel:active {
+  fill: var(--accent-color);
+}
 /*=================================  END ШАПКА  =========================*/
 
 /*=================================  ГЕРОЙ  =========================*/
 .hero {
   background-color: var(--hero-background-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
