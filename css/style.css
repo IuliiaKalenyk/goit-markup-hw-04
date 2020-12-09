@@ -30,6 +30,8 @@
   --icon-background-color: #2196f3;
   --icon-fill: #afb1b8;
   --icon-hover-fill: #ffffff;
+  --icon-footer-background-color: rgba(255, 255, 255, 0.1);
+  --icon-footer-fill: #ffffff;
 }
 /*=================================  BODY  =========================*/
 body {
@@ -498,7 +500,9 @@ img {
   border: #afb1b8 solid 1px;
   justify-content: center;
   align-items: center;
-  margin-top: ;
+}
+.company-names {
+  margin-top: 50px;
 }
 .company-names-link:hover .company-names-icon,
 .company-names-link:focus .company-names-icon {
@@ -519,7 +523,17 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+.footer-contacts {
+  display: block;
+  margin-right: 70px;
+}
+.footer-list {
+  display: block;
+}
 .footer-logotype {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -530,6 +544,9 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--accent-color-footer);
+}
+.footer-logo {
+  margin-bottom: 20px;
 }
 .footer-logotype:hover,
 .footer-logotype:focus {
@@ -558,7 +575,55 @@ img {
 
   color: var(--address-color-footer);
 }
+.footer-icon {
+  display: block;
+  width: 206px;
+  height: 80px;
+  margin: 0;
+  /*flex-wrap: wrap;*/
+}
+.footer-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.social-networks-container {
+  display: flex;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+.footer-social-networks {
+  display: flex;
+  width: 206px;
+  justify-content: space-between;
+}
+.footer-social-networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--icon-footer-background-color);
+}
+.footer-social-networks-link:hover .footer-isocial-networks-icon,
+.footer-social-networks-link:focus .footer-isocial-networks-icon {
+  fill: var(--icon-hover-fill);
+}
+.footer-isocial-networks-icon {
+  fill: var(--icon-footer-fill);
+}
+.footer-social-networks-link:hover,
+.footer-social-networks-link:focus {
+  background-color: var(--icon-background-color);
+}
 /*=================================  END ФУТЕР  =========================*/
 
 /*=================================  ПОРТФОЛИО  =========================*/
@@ -602,6 +667,7 @@ img {
   padding: 6px 22px;
   background-color: var(--button-background-color-portfolio);
   border-radius: 4px;
+  cursor: pointer;
 }
 
 /*=================================  END ПОРТФОЛИО КАТЕГОРИИ  =========================*/
